@@ -1,0 +1,103 @@
+/* Fondo animado con parpadeo */
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at center, #300000, #000000);
+  animation: brillo 3s infinite;
+}
+
+/* Parpadeo del fondo */
+@keyframes brillo {
+  0%, 100% { filter: brightness(1); }
+  50% { filter: brightness(1.5); }
+}
+
+/* Contenedor centrado */
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: radial-gradient(to top, 255, 255, 255, 10%);
+}
+
+/* Título con sombra */
+.titulo {
+  margin-top: 15px;
+  font-size: 2.5em;
+  color: red;
+  font-family: Arial, sans-serif;
+  text-shadow: 0 0 10px red;
+}
+.alias {
+  margin-top: -20px;
+  font-size: 2em;
+  color: red;
+  font-family: Arial, sans-serif;
+  text-shadow: 0 0 10px red;
+}
+
+/* Subtítulo con sombra */
+.subtitulo {
+  margin-top: -10px;
+  font-size: 1.2em;
+  color: red;
+  font-family: Arial, sans-serif;
+  text-shadow: 0 0 8px red;
+}
+.contacts {
+  margin-top: 5px;
+  font-size: 1.2em;
+  color: red;
+  font-family: Arial, sans-serif;
+  text-shadow: 0 0 8px red;
+}
+
+/* Foto circular */
+.mi-foto {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: 20px;
+  animation: pulso 10s infinite;
+}
+
+
+/* Botones alineados */
+.botones {
+  display: flex;
+  gap: 10px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Estilo de botón */
+.btn {
+  margin-top: -100px;
+  padding: 5px 5px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: ;
+  transition: 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Hover en botón */
+.btn:hover {
+}
+
+/* Pulso visual */
+.btn img {
+  width: 50px;
+  height: 50px;
+}
+
+@keyframes pulso {
+  0%, 100% { transform: scale(1); box-shadow: 0 0 5px red; }
+  50% { transform: scale(1.1); box-shadow: 0 0 15px red; }
+}
